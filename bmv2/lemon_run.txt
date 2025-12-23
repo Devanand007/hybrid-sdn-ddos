@@ -1,0 +1,2 @@
+p4switch: s01 thrift_port: 9090
+p4switch: s02 thrift_port: 9091

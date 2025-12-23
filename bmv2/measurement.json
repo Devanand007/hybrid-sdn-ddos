@@ -1,0 +1,5562 @@
+{
+  "header_types" : [
+    {
+      "name" : "scalars_0",
+      "id" : 0,
+      "fields" : [
+        ["tmp", 32, false],
+        ["tmp_0", 32, false],
+        ["tmp_1", 16, false],
+        ["tmp_2", 16, false],
+        ["tmp_3", 8, false],
+        ["tmp_4", 16, false],
+        ["tmp_5", 16, false],
+        ["tmp_6", 32, false],
+        ["tmp_7", 16, false],
+        ["tmp_8", 16, false],
+        ["tmp_9", 32, false],
+        ["tmp_10", 32, false],
+        ["tmp_11", 16, false],
+        ["tmp_12", 16, false],
+        ["tmp_13", 8, false],
+        ["tmp_14", 16, false],
+        ["tmp_15", 16, false],
+        ["tmp_16", 32, false],
+        ["tmp_17", 16, false],
+        ["tmp_18", 16, false],
+        ["tmp_19", 32, false],
+        ["tmp_20", 32, false],
+        ["tmp_21", 16, false],
+        ["tmp_22", 16, false],
+        ["tmp_23", 8, false],
+        ["tmp_24", 32, false],
+        ["tmp_25", 32, false],
+        ["tmp_26", 16, false],
+        ["tmp_27", 16, false],
+        ["tmp_28", 8, false],
+        ["tmp_29", 32, false],
+        ["tmp_30", 32, false],
+        ["tmp_31", 16, false],
+        ["tmp_32", 16, false],
+        ["tmp_33", 8, false],
+        ["tmp_34", 16, false],
+        ["tmp_35", 16, false],
+        ["tmp_36", 32, false],
+        ["tmp_37", 16, false],
+        ["tmp_38", 16, false],
+        ["tmp_39", 32, false],
+        ["tmp_40", 32, false],
+        ["tmp_41", 16, false],
+        ["tmp_42", 16, false],
+        ["tmp_43", 8, false],
+        ["tmp_44", 16, false],
+        ["tmp_45", 16, false],
+        ["tmp_46", 32, false],
+        ["tmp_47", 16, false],
+        ["tmp_48", 16, false],
+        ["tmp_49", 32, false],
+        ["tmp_50", 32, false],
+        ["tmp_51", 16, false],
+        ["tmp_52", 16, false],
+        ["tmp_53", 8, false],
+        ["tmp_54", 32, false],
+        ["tmp_55", 32, false],
+        ["tmp_56", 16, false],
+        ["tmp_57", 16, false],
+        ["tmp_58", 8, false],
+        ["deep_h_0", 16, false],
+        ["slot_h_0", 32, false],
+        ["bitmap_h_0", 32, false],
+        ["sip_mask_f_0", 32, false],
+        ["dip_mask_f_0", 32, false],
+        ["sport_mask_f_0", 16, false],
+        ["dport_mask_f_0", 16, false],
+        ["protocol_mask_f_0", 8, false],
+        ["deep1_0", 16, false],
+        ["deep2_0", 16, false],
+        ["deep3_0", 16, false],
+        ["deep4_0", 16, false],
+        ["counter_hash_0", 32, false],
+        ["counter_val_0", 32, false],
+        ["slot_0", 32, false],
+        ["slot_1", 32, false],
+        ["slot_2", 32, false],
+        ["slot_3", 32, false],
+        ["slot_4", 32, false],
+        ["slot_5", 32, false],
+        ["dhash_0", 16, false],
+        ["dhash_2", 16, false],
+        ["shash_0", 32, false],
+        ["shash_2", 32, false],
+        ["bhash_0", 32, false],
+        ["bhash_2", 32, false],
+        ["rhash_3", 32, false],
+        ["rhash_4", 32, false],
+        ["metadata.dstip", 32, false],
+        ["metadata.srcip", 32, false],
+        ["metadata.srcport", 16, false],
+        ["metadata.dstport", 16, false],
+        ["metadata.protocol", 8, false],
+        ["metadata.kmvflag", 8, false],
+        ["metadata.khash", 32, false],
+        ["metadata.khash1", 32, false],
+        ["metadata.counter", 32, false],
+        ["metadata.epoch", 16, false]
+      ]
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "fields" : [
+        ["ingress_port", 9, false],
+        ["egress_spec", 9, false],
+        ["egress_port", 9, false],
+        ["instance_type", 32, false],
+        ["packet_length", 32, false],
+        ["enq_timestamp", 32, false],
+        ["enq_qdepth", 19, false],
+        ["deq_timedelta", 32, false],
+        ["deq_qdepth", 19, false],
+        ["ingress_global_timestamp", 48, false],
+        ["egress_global_timestamp", 48, false],
+        ["mcast_grp", 16, false],
+        ["egress_rid", 16, false],
+        ["checksum_error", 1, false],
+        ["parser_error", 32, false],
+        ["priority", 3, false],
+        ["_padding", 3, false]
+      ]
+    },
+    {
+      "name" : "ethernet_t",
+      "id" : 2,
+      "fields" : [
+        ["dstAddr", 48, false],
+        ["srcAddr", 48, false],
+        ["etherType", 16, false]
+      ]
+    },
+    {
+      "name" : "ipv4_t",
+      "id" : 3,
+      "fields" : [
+        ["version", 4, false],
+        ["ihl", 4, false],
+        ["tos", 8, false],
+        ["totalLen", 16, false],
+        ["identification", 16, false],
+        ["flags", 3, false],
+        ["fragOffset", 13, false],
+        ["ttl", 8, false],
+        ["protocol", 8, false],
+        ["hdrChecksum", 16, false],
+        ["srcAddr", 32, false],
+        ["dstAddr", 32, false]
+      ]
+    },
+    {
+      "name" : "cpu_t",
+      "id" : 4,
+      "fields" : [
+        ["hash", 32, false],
+        ["hash1", 32, false],
+        ["srcip", 32, false],
+        ["dstip", 32, false],
+        ["srcport", 16, false],
+        ["dstport", 16, false],
+        ["protocol", 8, false],
+        ["counter", 32, false],
+        ["epoch", 16, false],
+        ["outputport", 8, false]
+      ]
+    },
+    {
+      "name" : "udp_t",
+      "id" : 5,
+      "fields" : [
+        ["src_port", 16, false],
+        ["dst_port", 16, false],
+        ["hdr_length", 16, false],
+        ["checksum", 16, false],
+        ["payload", 16, false]
+      ]
+    },
+    {
+      "name" : "tcp_t",
+      "id" : 6,
+      "fields" : [
+        ["src_port", 16, false],
+        ["dst_port", 16, false],
+        ["seq_no", 32, false],
+        ["ack_no", 32, false],
+        ["data_offset", 4, false],
+        ["res", 4, false],
+        ["flags", 8, false],
+        ["window", 16, false],
+        ["checksum", 16, false],
+        ["urgent_ptr", 16, false],
+        ["payload", 16, false]
+      ]
+    },
+    {
+      "name" : "icmp_t",
+      "id" : 7,
+      "fields" : [
+        ["type", 8, false],
+        ["code", 8, false],
+        ["checksum", 16, false]
+      ]
+    },
+    {
+      "name" : "vlan_tag_h",
+      "id" : 8,
+      "fields" : [
+        ["pcp", 3, false],
+        ["cfi", 1, false],
+        ["vid", 12, false],
+        ["type", 16, false]
+      ]
+    }
+  ],
+  "headers" : [
+    {
+      "name" : "scalars",
+      "id" : 0,
+      "header_type" : "scalars_0",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "header_type" : "standard_metadata",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ethernet",
+      "id" : 2,
+      "header_type" : "ethernet_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ipv4",
+      "id" : 3,
+      "header_type" : "ipv4_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "cpu",
+      "id" : 4,
+      "header_type" : "cpu_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "udp",
+      "id" : 5,
+      "header_type" : "udp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "tcp",
+      "id" : 6,
+      "header_type" : "tcp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "icmp",
+      "id" : 7,
+      "header_type" : "icmp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "vlan",
+      "id" : 8,
+      "header_type" : "vlan_tag_h",
+      "metadata" : false,
+      "pi_omit" : true
+    }
+  ],
+  "header_stacks" : [],
+  "header_union_types" : [],
+  "header_unions" : [],
+  "header_union_stacks" : [],
+  "field_lists" : [],
+  "errors" : [
+    ["NoError", 0],
+    ["PacketTooShort", 1],
+    ["NoMatch", 2],
+    ["StackOutOfBounds", 3],
+    ["HeaderTooShort", 4],
+    ["ParserTimeout", 5],
+    ["ParserInvalidArgument", 6]
+  ],
+  "enums" : [],
+  "parsers" : [
+    {
+      "name" : "parser",
+      "id" : 0,
+      "init_state" : "start",
+      "parse_states" : [
+        {
+          "name" : "start",
+          "id" : 0,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ethernet"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x0800",
+              "mask" : null,
+              "next_state" : "ipv4"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x8100",
+              "mask" : null,
+              "next_state" : "vlan"
+            },
+            {
+              "type" : "default",
+              "value" : null,
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["ethernet", "etherType"]
+            }
+          ]
+        },
+        {
+          "name" : "vlan",
+          "id" : 1,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "vlan"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x0800",
+              "mask" : null,
+              "next_state" : "ipv4"
+            },
+            {
+              "type" : "default",
+              "value" : null,
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["vlan", "type"]
+            }
+          ]
+        },
+        {
+          "name" : "ipv4",
+          "id" : 2,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ipv4"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x06",
+              "mask" : null,
+              "next_state" : "parse_tcp"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x11",
+              "mask" : null,
+              "next_state" : "parse_udp"
+            },
+            {
+              "type" : "default",
+              "value" : null,
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_tcp",
+          "id" : 3,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "tcp"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "default",
+              "value" : null,
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        },
+        {
+          "name" : "parse_udp",
+          "id" : 4,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "udp"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "default",
+              "value" : null,
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        }
+      ]
+    }
+  ],
+  "parse_vsets" : [],
+  "deparsers" : [
+    {
+      "name" : "deparser",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 476,
+        "column" : 8,
+        "source_fragment" : "MyDeparser"
+      },
+      "order" : [],
+      "primitives" : []
+    }
+  ],
+  "meter_arrays" : [],
+  "counter_arrays" : [],
+  "register_arrays" : [
+    {
+      "name" : "MyIngress.lemon_layer1",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 229,
+        "column" : 33,
+        "source_fragment" : "lemon_layer1"
+      },
+      "size" : 4194304,
+      "bitwidth" : 1
+    },
+    {
+      "name" : "MyIngress.lemon_layer2",
+      "id" : 1,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 230,
+        "column" : 33,
+        "source_fragment" : "lemon_layer2"
+      },
+      "size" : 2097152,
+      "bitwidth" : 1
+    },
+    {
+      "name" : "MyIngress.lemon_layer3",
+      "id" : 2,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 231,
+        "column" : 32,
+        "source_fragment" : "lemon_layer3"
+      },
+      "size" : 262144,
+      "bitwidth" : 1
+    },
+    {
+      "name" : "MyIngress.lemon_layer4",
+      "id" : 3,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 232,
+        "column" : 31,
+        "source_fragment" : "lemon_layer4"
+      },
+      "size" : 65536,
+      "bitwidth" : 1
+    },
+    {
+      "name" : "MyIngress.lemon_layer5",
+      "id" : 4,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 233,
+        "column" : 32,
+        "source_fragment" : "lemon_layer5"
+      },
+      "size" : 524288,
+      "bitwidth" : 1
+    },
+    {
+      "name" : "MyIngress.hash_deep_threshold",
+      "id" : 5,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 235,
+        "column" : 25,
+        "source_fragment" : "hash_deep_threshold"
+      },
+      "size" : 4,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.counter",
+      "id" : 6,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 237,
+        "column" : 33,
+        "source_fragment" : "counter"
+      },
+      "size" : 524288,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.lemon_heavy_id",
+      "id" : 7,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 239,
+        "column" : 28,
+        "source_fragment" : "lemon_heavy_id"
+      },
+      "size" : 8192,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.lemon_heavy_tag",
+      "id" : 8,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 241,
+        "column" : 28,
+        "source_fragment" : "lemon_heavy_tag"
+      },
+      "size" : 8192,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.sip_mask_f",
+      "id" : 9,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 244,
+        "column" : 25,
+        "source_fragment" : "sip_mask_f"
+      },
+      "size" : 1,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.dip_mask_f",
+      "id" : 10,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 245,
+        "column" : 25,
+        "source_fragment" : "dip_mask_f"
+      },
+      "size" : 1,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.sport_mask_f",
+      "id" : 11,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 246,
+        "column" : 25,
+        "source_fragment" : "sport_mask_f"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.dport_mask_f",
+      "id" : 12,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 247,
+        "column" : 25,
+        "source_fragment" : "dport_mask_f"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.protol_f",
+      "id" : 13,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 248,
+        "column" : 24,
+        "source_fragment" : "protol_f"
+      },
+      "size" : 1,
+      "bitwidth" : 8
+    },
+    {
+      "name" : "MyIngress.sip_mask",
+      "id" : 14,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 250,
+        "column" : 25,
+        "source_fragment" : "sip_mask"
+      },
+      "size" : 1,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.dip_mask",
+      "id" : 15,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 251,
+        "column" : 25,
+        "source_fragment" : "dip_mask"
+      },
+      "size" : 1,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "MyIngress.sport_mask",
+      "id" : 16,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 252,
+        "column" : 25,
+        "source_fragment" : "sport_mask"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.dport_mask",
+      "id" : 17,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 253,
+        "column" : 25,
+        "source_fragment" : "dport_mask"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.protol",
+      "id" : 18,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 254,
+        "column" : 24,
+        "source_fragment" : "protol"
+      },
+      "size" : 1,
+      "bitwidth" : 8
+    },
+    {
+      "name" : "MyIngress.ip_checksum",
+      "id" : 19,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 255,
+        "column" : 25,
+        "source_fragment" : "ip_checksum"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.transport_checksum",
+      "id" : 20,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 256,
+        "column" : 25,
+        "source_fragment" : "transport_checksum"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.perpkt_tag",
+      "id" : 21,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 257,
+        "column" : 25,
+        "source_fragment" : "perpkt_tag"
+      },
+      "size" : 1,
+      "bitwidth" : 16
+    },
+    {
+      "name" : "MyIngress.Heavy_dst",
+      "id" : 22,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 279,
+        "column" : 31,
+        "source_fragment" : "Heavy_dst"
+      },
+      "size" : 8192,
+      "bitwidth" : 32
+    }
+  ],
+  "calculations" : [
+    {
+      "name" : "calc",
+      "id" : 0,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_0"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_1"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_2"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_3"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_4"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_5"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_6"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_7"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_8"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_0",
+      "id" : 1,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_9"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_10"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_11"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_12"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_13"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_14"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_15"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_16"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_17"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_18"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_1",
+      "id" : 2,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_19"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_20"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_21"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_22"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_23"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_2",
+      "id" : 3,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_24"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_25"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_26"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_27"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_28"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_3",
+      "id" : 4,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_29"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_30"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_31"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_32"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_33"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_34"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_35"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_36"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_37"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_38"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_4",
+      "id" : 5,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_39"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_40"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_41"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_42"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_43"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_44"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_45"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_46"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_47"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_48"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_5",
+      "id" : 6,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_49"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_50"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_51"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_52"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_53"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_6",
+      "id" : 7,
+      "algo" : "crc32_custom",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_54"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_55"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_56"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_57"]
+        },
+        {
+          "type" : "field",
+          "value" : ["scalars", "tmp_58"]
+        }
+      ]
+    },
+    {
+      "name" : "calc_7",
+      "id" : 8,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 453,
+        "column" : 8,
+        "source_fragment" : "update_checksum( ..."
+      },
+      "algo" : "csum16",
+      "input" : [
+        {
+          "type" : "field",
+          "value" : ["ipv4", "version"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "ihl"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "tos"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "totalLen"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "identification"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "flags"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "fragOffset"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "ttl"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "protocol"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "srcAddr"]
+        },
+        {
+          "type" : "field",
+          "value" : ["ipv4", "dstAddr"]
+        }
+      ]
+    }
+  ],
+  "learn_lists" : [],
+  "actions" : [
+    {
+      "name" : "MyIngress.deep_hash",
+      "id" : 0,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 55,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 65,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_1"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 74,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_2"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 82,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_3"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 90,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_4"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "hdrChecksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 99,
+            "source_fragment" : "ipsum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_5"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "checksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 105,
+            "source_fragment" : "checksum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_6"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "seq_no"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 114,
+            "source_fragment" : "seq_no"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_7"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 121,
+            "source_fragment" : "hdlen"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_8"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "payload"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 127,
+            "source_fragment" : "payload"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "dhash_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0xffff"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 8,
+            "source_fragment" : "hash(dhash, HashAlgorithm.crc32_custom, 16w0, {ipv4_src, ipv4_dst,srcport,dstport,protocol,ipsum,checksum,seq_no,hdlen,payload}, 16w65535)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep_h_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "dhash_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 259,
+            "column" : 230,
+            "source_fragment" : "dhash){ ..."
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.deep_hash",
+      "id" : 1,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_9"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 55,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_10"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 65,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_11"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 74,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_12"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 82,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_13"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 90,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_14"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "hdrChecksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 99,
+            "source_fragment" : "ipsum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_15"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "checksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 105,
+            "source_fragment" : "checksum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_16"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 114,
+            "source_fragment" : "seq_no"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_17"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "hdr_length"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 121,
+            "source_fragment" : "hdlen"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_18"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "payload"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 127,
+            "source_fragment" : "payload"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "dhash_2"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_0"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0xffff"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 260,
+            "column" : 8,
+            "source_fragment" : "hash(dhash, HashAlgorithm.crc32_custom, 16w0, {ipv4_src, ipv4_dst,srcport,dstport,protocol,ipsum,checksum,seq_no,hdlen,payload}, 16w65535)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep_h_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "dhash_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 259,
+            "column" : 230,
+            "source_fragment" : "dhash){ ..."
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.slot_hash",
+      "id" : 2,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_19"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["ipv4", "srcAddr"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "sip_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 55,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_20"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["ipv4", "dstAddr"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "dip_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 65,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_21"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["tcp", "src_port"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "sport_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 74,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_22"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["tcp", "dst_port"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "dport_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 82,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_23"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["ipv4", "protocol"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "protocol_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 90,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "shash_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_1"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00080000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 8,
+            "source_fragment" : "hash(shash, HashAlgorithm.crc32_custom, 32w0, {ipv4_src, ipv4_dst,srcport,dstport,protocol}, 32w524288)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_h_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "shash_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 263,
+            "column" : 135,
+            "source_fragment" : "shash) { ..."
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.slot_hash",
+      "id" : 3,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_24"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["ipv4", "srcAddr"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "sip_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 55,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_25"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["ipv4", "dstAddr"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "dip_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 65,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_26"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["udp", "src_port"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "sport_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 74,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_27"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["udp", "dst_port"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "dport_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 82,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_28"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["ipv4", "protocol"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "protocol_mask_f_0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 90,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "shash_2"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_2"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00080000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 264,
+            "column" : 8,
+            "source_fragment" : "hash(shash, HashAlgorithm.crc32_custom, 32w0, {ipv4_src, ipv4_dst,srcport,dstport,protocol}, 32w524288)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_h_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "shash_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 263,
+            "column" : 135,
+            "source_fragment" : "shash) { ..."
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.bitmap_hash",
+      "id" : 4,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_29"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 55,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_30"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 65,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_31"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 74,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_32"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 82,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_33"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 90,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_34"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "hdrChecksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 99,
+            "source_fragment" : "ipsum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_35"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "checksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 105,
+            "source_fragment" : "checksum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_36"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "seq_no"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 114,
+            "source_fragment" : "seq_no"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_37"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 121,
+            "source_fragment" : "hdlen"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_38"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 127,
+            "source_fragment" : "payload"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "bhash_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_3"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000200"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 8,
+            "source_fragment" : "hash(bhash, HashAlgorithm.crc32_custom, 32w0, {ipv4_src, ipv4_dst,srcport,dstport,protocol,ipsum,checksum,seq_no,hdlen,payload}, 32w512)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "bitmap_h_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "bhash_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 267,
+            "column" : 232,
+            "source_fragment" : "bhash) { ..."
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.bitmap_hash",
+      "id" : 5,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_39"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 55,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_40"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 65,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_41"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 74,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_42"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 82,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_43"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 90,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_44"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "hdrChecksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 99,
+            "source_fragment" : "ipsum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_45"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "checksum"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 105,
+            "source_fragment" : "checksum"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_46"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 114,
+            "source_fragment" : "seq_no"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_47"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "hdr_length"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 121,
+            "source_fragment" : "hdlen"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_48"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "payload"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 127,
+            "source_fragment" : "payload"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "bhash_2"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_4"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000200"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 268,
+            "column" : 8,
+            "source_fragment" : "hash(bhash, HashAlgorithm.crc32_custom, 32w0, {ipv4_src, ipv4_dst,srcport,dstport,protocol,ipsum,checksum,seq_no,hdlen,payload}, 32w512)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "bitmap_h_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "bhash_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 267,
+            "column" : 232,
+            "source_fragment" : "bhash) { ..."
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.routehash",
+      "id" : 6,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_49"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 62,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_50"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 72,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_51"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 81,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_52"]
+            },
+            {
+              "type" : "field",
+              "value" : ["tcp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 89,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_53"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 97,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "rhash_3"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_5"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000003"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 8,
+            "source_fragment" : "hash(rhash, HashAlgorithm.crc32_custom, 32w00000000, {ipv4_src, ipv4_dst,srcport,dstport,protocol}, 32w3)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.routehash",
+      "id" : 7,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_54"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 62,
+            "source_fragment" : "ipv4_src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_55"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 72,
+            "source_fragment" : "ipv4_dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_56"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 81,
+            "source_fragment" : "srcport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_57"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 89,
+            "source_fragment" : "dstport"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_58"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 97,
+            "source_fragment" : "protocol"
+          }
+        },
+        {
+          "op" : "modify_field_with_hash_based_offset",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "rhash_4"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "calculation",
+              "value" : "calc_6"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000003"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 272,
+            "column" : 8,
+            "source_fragment" : "hash(rhash, HashAlgorithm.crc32_custom, 32w00000000, {ipv4_src, ipv4_dst,srcport,dstport,protocol}, 32w3)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement298",
+      "id" : 8,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata.srcip"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 298,
+            "column" : 12,
+            "source_fragment" : "meta.srcip=hdr.ipv4.srcAddr"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata.dstip"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 299,
+            "column" : 12,
+            "source_fragment" : "meta.dstip=hdr.ipv4.dstAddr"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata.protocol"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 300,
+            "column" : 12,
+            "source_fragment" : "meta.protocol=hdr.ipv4.protocol"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement303",
+      "id" : 9,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep_h_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 303,
+            "column" : 8,
+            "source_fragment" : "bit<16> deep_h = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_h_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 304,
+            "column" : 5,
+            "source_fragment" : "bit<32> slot_h = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "bitmap_h_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 306,
+            "column" : 8,
+            "source_fragment" : "bit<32> bitmap_h = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "sip_mask_f_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 309,
+            "column" : 8,
+            "source_fragment" : "bit<32> sip_mask_f = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "dip_mask_f_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0xffffffff"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 310,
+            "column" : 8,
+            "source_fragment" : "bit<32> dip_mask_f = 0xffffffff;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "sport_mask_f_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 311,
+            "column" : 8,
+            "source_fragment" : "bit<16> sport_mask_f = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "dport_mask_f_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 312,
+            "column" : 8,
+            "source_fragment" : "bit<16> dport_mask_f = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "protocol_mask_f_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 313,
+            "column" : 8,
+            "source_fragment" : "bit<8> protocol_mask_f = 0;"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement371",
+      "id" : 10,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 371,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_0"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_0"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xfff801ff"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "<<",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "&",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : "&",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["scalars", "slot_h_0"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0x03ff"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xffffffff"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x9"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0007fe00"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 372,
+            "column" : 12,
+            "source_fragment" : "slot[18:9] = slot_h[9:0]"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_0"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_0"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xfffffe00"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "bitmap_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x01ff"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x000001ff"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 373,
+            "column" : 12,
+            "source_fragment" : "slot[8:0] = bitmap_h[8:0]"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_layer5"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x01"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 374,
+            "column" : 12,
+            "source_fragment" : "lemon_layer5.write(slot,1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement351",
+      "id" : 11,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x4000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 351,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.write(0, 16384)"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000001"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x2000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 352,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.write(1, 8192)"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000002"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0400"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 353,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.write(2, 1024)"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000003"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0100"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 354,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.write(3, 256)"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep1_0"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 356,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.read(deep1,0)"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep2_0"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000001"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 357,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.read(deep2,1)"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep3_0"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000002"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 358,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.read(deep3,2)"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep4_0"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.hash_deep_threshold"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000003"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 359,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.read(deep4,3)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_hash_0"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 362,
+            "column" : 8,
+            "source_fragment" : "bit<32> counter_hash = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_hash_0"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "counter_hash_0"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xfff80000"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "slot_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x07ffff"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0007ffff"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 364,
+            "column" : 8,
+            "source_fragment" : "counter_hash[18:0] = slot_h[18:0]"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_val_0"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.counter"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_hash_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 365,
+            "column" : 8,
+            "source_fragment" : "counter.read(counter_val, counter_hash)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_val_0"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "+",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "counter_val_0"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x00000001"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 366,
+            "column" : 8,
+            "source_fragment" : "counter_val = counter_val + 1"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.counter"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_hash_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "counter_val_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 367,
+            "column" : 8,
+            "source_fragment" : "counter.write(counter_hash,counter_val)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement377",
+      "id" : 12,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_1"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 377,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_1"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_1"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffff001f"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "<<",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "&",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : "&",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["scalars", "slot_h_0"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0x07ff"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xffffffff"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x5"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0000ffe0"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 378,
+            "column" : 12,
+            "source_fragment" : "slot[15:5] = slot_h[10:0]"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_1"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_1"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffffffe0"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "bitmap_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x1f"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0000001f"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 379,
+            "column" : 12,
+            "source_fragment" : "slot[4:0] = bitmap_h[4:0]"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_layer4"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_1"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x01"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 380,
+            "column" : 12,
+            "source_fragment" : "lemon_layer4.write(slot,1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement385",
+      "id" : 13,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_2"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 385,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_2"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_2"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xfffc001f"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "<<",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "&",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : "&",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["scalars", "slot_h_0"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0x1fff"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xffffffff"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x5"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0003ffe0"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 386,
+            "column" : 12,
+            "source_fragment" : "slot[17:5] = slot_h[12:0]"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_2"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_2"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffffffe0"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "bitmap_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x1f"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0000001f"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 387,
+            "column" : 12,
+            "source_fragment" : "slot[4:0] = bitmap_h[4:0]"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_layer3"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_2"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x01"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 388,
+            "column" : 12,
+            "source_fragment" : "lemon_layer3.write(slot,1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement393",
+      "id" : 14,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_3"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 393,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_3"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_3"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffe0001f"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "<<",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "&",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : "&",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["scalars", "slot_h_0"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0xffff"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xffffffff"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x5"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x001fffe0"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 394,
+            "column" : 12,
+            "source_fragment" : "slot[20:5] = slot_h[15:0]"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_3"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_3"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffffffe0"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "bitmap_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x1f"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x0000001f"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 395,
+            "column" : 12,
+            "source_fragment" : "slot[4:0] = bitmap_h[4:0]"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_layer2"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_3"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x01"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 396,
+            "column" : 12,
+            "source_fragment" : "lemon_layer2.write(slot,1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement401",
+      "id" : 15,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_4"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 401,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_4"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_4"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffc00007"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "<<",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "&",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : "&",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["scalars", "slot_h_0"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0x07ffff"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xffffffff"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x3"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x003ffff8"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 402,
+            "column" : 12,
+            "source_fragment" : "slot[21:3] = slot_h[18:0]"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_4"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_4"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xfffffff8"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "bitmap_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x07"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x00000007"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 403,
+            "column" : 12,
+            "source_fragment" : "slot[2:0] = bitmap_h[2:0]"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_layer1"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_4"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x01"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 404,
+            "column" : 12,
+            "source_fragment" : "lemon_layer1.write(slot,1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement407",
+      "id" : 16,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_5"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 407,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0;"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_5"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "slot_5"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffffe000"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["scalars", "slot_h_0"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x1fff"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xffffffff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x00001fff"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 408,
+            "column" : 12,
+            "source_fragment" : "slot[12:0] = slot_h[12:0]"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_heavy_id"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_5"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dstAddr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 409,
+            "column" : 12,
+            "source_fragment" : "lemon_heavy_id.write(slot,hdr.ipv4.dstAddr)"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyIngress.lemon_heavy_tag"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_5"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "slot_h_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 410,
+            "column" : 12,
+            "source_fragment" : "lemon_heavy_tag.write(slot,slot_h)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "measurement412",
+      "id" : 17,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["ipv4", "srcAddr"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 412,
+            "column" : 8,
+            "source_fragment" : "hdr.ipv4.srcAddr[31:0] = 0"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["ipv4", "identification"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "deep_h_0"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 414,
+            "column" : 8,
+            "source_fragment" : "hdr.ipv4.identification[15:0] = deep_h"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "egress_spec"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0001"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 415,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.egress_spec = 1"
+          }
+        }
+      ]
+    }
+  ],
+  "pipelines" : [
+    {
+      "name" : "ingress",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 221,
+        "column" : 8,
+        "source_fragment" : "MyIngress"
+      },
+      "init_table" : "node_2",
+      "tables" : [
+        {
+          "name" : "tbl_measurement298",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 298,
+            "column" : 22,
+            "source_fragment" : "=hdr.ipv4.srcAddr; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [8],
+          "actions" : ["measurement298"],
+          "base_default_next" : "tbl_measurement303",
+          "next_tables" : {
+            "measurement298" : "tbl_measurement303"
+          },
+          "default_entry" : {
+            "action_id" : 8,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement303",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 303,
+            "column" : 8,
+            "source_fragment" : "bit<16> deep_h = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [9],
+          "actions" : ["measurement303"],
+          "base_default_next" : "node_5",
+          "next_tables" : {
+            "measurement303" : "node_5"
+          },
+          "default_entry" : {
+            "action_id" : 9,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_deep_hash",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 325,
+            "column" : 12,
+            "source_fragment" : "deep_hash(hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.tcp.src_port, hdr.tcp.dst_port,hdr.ipv4.protocol,hdr.ipv4.hdrChecksum, hdr.tcp.checksum,hdr.tcp.seq_no, 0, hdr.tcp.payload, deep_h)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [0],
+          "actions" : ["MyIngress.deep_hash"],
+          "base_default_next" : "tbl_slot_hash",
+          "next_tables" : {
+            "MyIngress.deep_hash" : "tbl_slot_hash"
+          },
+          "default_entry" : {
+            "action_id" : 0,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_slot_hash",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 326,
+            "column" : 12,
+            "source_fragment" : "slot_hash(hdr.ipv4.srcAddr & sip_mask_f, hdr.ipv4.dstAddr & dip_mask_f, hdr.tcp.src_port & sport_mask_f, hdr.tcp.dst_port & dport_mask_f,hdr.ipv4.protocol & protocol_mask_f, slot_h)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [2],
+          "actions" : ["MyIngress.slot_hash"],
+          "base_default_next" : "tbl_bitmap_hash",
+          "next_tables" : {
+            "MyIngress.slot_hash" : "tbl_bitmap_hash"
+          },
+          "default_entry" : {
+            "action_id" : 2,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_bitmap_hash",
+          "id" : 4,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 327,
+            "column" : 12,
+            "source_fragment" : "bitmap_hash(hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.tcp.src_port, hdr.tcp.dst_port,hdr.ipv4.protocol,hdr.ipv4.hdrChecksum, hdr.tcp.checksum,hdr.tcp.seq_no, 0, 0, bitmap_h)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [4],
+          "actions" : ["MyIngress.bitmap_hash"],
+          "base_default_next" : "tbl_routehash",
+          "next_tables" : {
+            "MyIngress.bitmap_hash" : "tbl_routehash"
+          },
+          "default_entry" : {
+            "action_id" : 4,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_routehash",
+          "id" : 5,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 328,
+            "column" : 12,
+            "source_fragment" : "routehash(hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.tcp.src_port, hdr.tcp.dst_port,hdr.ipv4.protocol, rhash)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [6],
+          "actions" : ["MyIngress.routehash"],
+          "base_default_next" : "tbl_measurement351",
+          "next_tables" : {
+            "MyIngress.routehash" : "tbl_measurement351"
+          },
+          "default_entry" : {
+            "action_id" : 6,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_deep_hash_0",
+          "id" : 6,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 332,
+            "column" : 12,
+            "source_fragment" : "deep_hash(hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.udp.src_port, hdr.udp.dst_port, hdr.ipv4.protocol,hdr.ipv4.hdrChecksum, hdr.udp.checksum, 0,hdr.udp.hdr_length,hdr.udp.payload, deep_h)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [1],
+          "actions" : ["MyIngress.deep_hash"],
+          "base_default_next" : "tbl_slot_hash_0",
+          "next_tables" : {
+            "MyIngress.deep_hash" : "tbl_slot_hash_0"
+          },
+          "default_entry" : {
+            "action_id" : 1,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_slot_hash_0",
+          "id" : 7,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 333,
+            "column" : 12,
+            "source_fragment" : "slot_hash(hdr.ipv4.srcAddr & sip_mask_f, hdr.ipv4.dstAddr & dip_mask_f, hdr.udp.src_port & sport_mask_f, hdr.udp.dst_port & dport_mask_f,hdr.ipv4.protocol & protocol_mask_f, slot_h)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [3],
+          "actions" : ["MyIngress.slot_hash"],
+          "base_default_next" : "tbl_bitmap_hash_0",
+          "next_tables" : {
+            "MyIngress.slot_hash" : "tbl_bitmap_hash_0"
+          },
+          "default_entry" : {
+            "action_id" : 3,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_bitmap_hash_0",
+          "id" : 8,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 334,
+            "column" : 9,
+            "source_fragment" : "bitmap_hash(hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.udp.src_port, hdr.udp.dst_port, hdr.ipv4.protocol,hdr.ipv4.hdrChecksum, hdr.udp.checksum, 0,hdr.udp.hdr_length,hdr.udp.payload, bitmap_h)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [5],
+          "actions" : ["MyIngress.bitmap_hash"],
+          "base_default_next" : "tbl_routehash_0",
+          "next_tables" : {
+            "MyIngress.bitmap_hash" : "tbl_routehash_0"
+          },
+          "default_entry" : {
+            "action_id" : 5,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_routehash_0",
+          "id" : 9,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 335,
+            "column" : 12,
+            "source_fragment" : "routehash(hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.udp.src_port, hdr.udp.dst_port,hdr.ipv4.protocol, rhash)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [7],
+          "actions" : ["MyIngress.routehash"],
+          "base_default_next" : "tbl_measurement351",
+          "next_tables" : {
+            "MyIngress.routehash" : "tbl_measurement351"
+          },
+          "default_entry" : {
+            "action_id" : 7,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement351",
+          "id" : 10,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 351,
+            "column" : 8,
+            "source_fragment" : "hash_deep_threshold.write(0, 16384); ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [11],
+          "actions" : ["measurement351"],
+          "base_default_next" : "node_16",
+          "next_tables" : {
+            "measurement351" : "node_16"
+          },
+          "default_entry" : {
+            "action_id" : 11,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement371",
+          "id" : 11,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 371,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [10],
+          "actions" : ["measurement371"],
+          "base_default_next" : "node_18",
+          "next_tables" : {
+            "measurement371" : "node_18"
+          },
+          "default_entry" : {
+            "action_id" : 10,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement377",
+          "id" : 12,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 377,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [12],
+          "actions" : ["measurement377"],
+          "base_default_next" : "node_20",
+          "next_tables" : {
+            "measurement377" : "node_20"
+          },
+          "default_entry" : {
+            "action_id" : 12,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement385",
+          "id" : 13,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 385,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [13],
+          "actions" : ["measurement385"],
+          "base_default_next" : "node_22",
+          "next_tables" : {
+            "measurement385" : "node_22"
+          },
+          "default_entry" : {
+            "action_id" : 13,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement393",
+          "id" : 14,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 393,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [14],
+          "actions" : ["measurement393"],
+          "base_default_next" : "node_24",
+          "next_tables" : {
+            "measurement393" : "node_24"
+          },
+          "default_entry" : {
+            "action_id" : 14,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement401",
+          "id" : 15,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 401,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [15],
+          "actions" : ["measurement401"],
+          "base_default_next" : "node_26",
+          "next_tables" : {
+            "measurement401" : "node_26"
+          },
+          "default_entry" : {
+            "action_id" : 15,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement407",
+          "id" : 16,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 407,
+            "column" : 12,
+            "source_fragment" : "bit<32> slot = 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [16],
+          "actions" : ["measurement407"],
+          "base_default_next" : "tbl_measurement412",
+          "next_tables" : {
+            "measurement407" : "tbl_measurement412"
+          },
+          "default_entry" : {
+            "action_id" : 16,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_measurement412",
+          "id" : 17,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 412,
+            "column" : 31,
+            "source_fragment" : "= 0; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [17],
+          "actions" : ["measurement412"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "measurement412" : null
+          },
+          "default_entry" : {
+            "action_id" : 17,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_2",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 296,
+            "column" : 12,
+            "source_fragment" : "hdr.ipv4.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["ipv4", "$valid$"]
+              }
+            }
+          },
+          "true_next" : "tbl_measurement298",
+          "false_next" : "tbl_measurement303"
+        },
+        {
+          "name" : "node_5",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 324,
+            "column" : 12,
+            "source_fragment" : "hdr.tcp.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["tcp", "$valid$"]
+              }
+            }
+          },
+          "true_next" : "tbl_deep_hash",
+          "false_next" : "node_10"
+        },
+        {
+          "name" : "node_10",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 331,
+            "column" : 17,
+            "source_fragment" : "hdr.udp.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["udp", "$valid$"]
+              }
+            }
+          },
+          "true_next" : "tbl_deep_hash_0",
+          "false_next" : "tbl_measurement351"
+        },
+        {
+          "name" : "node_16",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 370,
+            "column" : 11,
+            "source_fragment" : "deep_h<=deep4"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "<=",
+              "left" : {
+                "type" : "field",
+                "value" : ["scalars", "deep_h_0"]
+              },
+              "right" : {
+                "type" : "field",
+                "value" : ["scalars", "deep4_0"]
+              }
+            }
+          },
+          "true_next" : "tbl_measurement371",
+          "false_next" : "node_18"
+        },
+        {
+          "name" : "node_18",
+          "id" : 4,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 376,
+            "column" : 11,
+            "source_fragment" : "deep_h<=deep3 && deep_h>deep4"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "and",
+              "left" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "<=",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep_h_0"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep3_0"]
+                  }
+                }
+              },
+              "right" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : ">",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep_h_0"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep4_0"]
+                  }
+                }
+              }
+            }
+          },
+          "true_next" : "tbl_measurement377",
+          "false_next" : "node_20"
+        },
+        {
+          "name" : "node_20",
+          "id" : 5,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 382,
+            "column" : 11,
+            "source_fragment" : "deep_h<=deep2 && deep_h>deep3"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "and",
+              "left" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "<=",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep_h_0"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep2_0"]
+                  }
+                }
+              },
+              "right" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : ">",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep_h_0"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep3_0"]
+                  }
+                }
+              }
+            }
+          },
+          "true_next" : "tbl_measurement385",
+          "false_next" : "node_22"
+        },
+        {
+          "name" : "node_22",
+          "id" : 6,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 390,
+            "column" : 11,
+            "source_fragment" : "deep_h<=deep1 && deep_h>deep2"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "and",
+              "left" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "<=",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep_h_0"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep1_0"]
+                  }
+                }
+              },
+              "right" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : ">",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep_h_0"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["scalars", "deep2_0"]
+                  }
+                }
+              }
+            }
+          },
+          "true_next" : "tbl_measurement393",
+          "false_next" : "node_24"
+        },
+        {
+          "name" : "node_24",
+          "id" : 7,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 398,
+            "column" : 11,
+            "source_fragment" : "deep_h > deep1"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : ">",
+              "left" : {
+                "type" : "field",
+                "value" : ["scalars", "deep_h_0"]
+              },
+              "right" : {
+                "type" : "field",
+                "value" : ["scalars", "deep1_0"]
+              }
+            }
+          },
+          "true_next" : "tbl_measurement401",
+          "false_next" : "node_26"
+        },
+        {
+          "name" : "node_26",
+          "id" : 8,
+          "source_info" : {
+            "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+            "line" : 406,
+            "column" : 11,
+            "source_fragment" : "deep_h < deep3"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "<",
+              "left" : {
+                "type" : "field",
+                "value" : ["scalars", "deep_h_0"]
+              },
+              "right" : {
+                "type" : "field",
+                "value" : ["scalars", "deep3_0"]
+              }
+            }
+          },
+          "true_next" : "tbl_measurement407",
+          "false_next" : "tbl_measurement412"
+        }
+      ]
+    },
+    {
+      "name" : "egress",
+      "id" : 1,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 424,
+        "column" : 8,
+        "source_fragment" : "MyEgress"
+      },
+      "init_table" : null,
+      "tables" : [],
+      "action_profiles" : [],
+      "conditionals" : []
+    }
+  ],
+  "checksums" : [
+    {
+      "name" : "cksum",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/devar/Lemon/lemon_bmv2/measurement.p4",
+        "line" : 453,
+        "column" : 8,
+        "source_fragment" : "update_checksum( ..."
+      },
+      "target" : ["ipv4", "hdrChecksum"],
+      "type" : "generic",
+      "calculation" : "calc_7",
+      "verify" : false,
+      "update" : true,
+      "if_cond" : {
+        "type" : "expression",
+        "value" : {
+          "op" : "d2b",
+          "left" : null,
+          "right" : {
+            "type" : "field",
+            "value" : ["ipv4", "$valid$"]
+          }
+        }
+      }
+    }
+  ],
+  "force_arith" : [],
+  "extern_instances" : [],
+  "field_aliases" : [
+    [
+      "queueing_metadata.enq_timestamp",
+      ["standard_metadata", "enq_timestamp"]
+    ],
+    [
+      "queueing_metadata.enq_qdepth",
+      ["standard_metadata", "enq_qdepth"]
+    ],
+    [
+      "queueing_metadata.deq_timedelta",
+      ["standard_metadata", "deq_timedelta"]
+    ],
+    [
+      "queueing_metadata.deq_qdepth",
+      ["standard_metadata", "deq_qdepth"]
+    ],
+    [
+      "intrinsic_metadata.ingress_global_timestamp",
+      ["standard_metadata", "ingress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.egress_global_timestamp",
+      ["standard_metadata", "egress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.mcast_grp",
+      ["standard_metadata", "mcast_grp"]
+    ],
+    [
+      "intrinsic_metadata.egress_rid",
+      ["standard_metadata", "egress_rid"]
+    ],
+    [
+      "intrinsic_metadata.priority",
+      ["standard_metadata", "priority"]
+    ]
+  ],
+  "program" : "/home/devar/Lemon/lemon_bmv2/measurement.p4i",
+  "__meta__" : {
+    "version" : [2, 23],
+    "compiler" : "https://github.com/p4lang/p4c"
+  }
+}

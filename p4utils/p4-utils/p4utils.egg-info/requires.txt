@@ -1,0 +1,10 @@
+googleapis-common-protos>=1.52
+grpcio==1.44.0
+ipaddr
+ipaddress
+networkx
+p4runtime
+protobuf==3.20.3
+psutil
+scapy>=2.5.0
+setuptools
