@@ -52,6 +52,18 @@ The objective is to achieve **early attack detection**, **low data-plane overhea
 - Python 3.8+
 
 ---
+## Python Environment
+
+- Python version: **3.10**
+- A virtual environment is recommended but not included in this repository.
+
+### Setup
+
+```bash
+python3.10 -m venv lemon-venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 ## Dataset
 
