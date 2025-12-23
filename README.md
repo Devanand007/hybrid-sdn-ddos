@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lemon: Network-wide DDoS Detection with Routing-Oblivious Per-flow Measurement
 
 Network-wide DDoS (Distributed Denial-of-Service) detection enables early attack detection and mitigates victim losses. We propose Lemon, a routing-oblivious, resource-friendly, and scalable DDoS detection system that provides accurate detection of DDoS attacks without any assumption on the traffic routing.
@@ -26,3 +27,7 @@ The background traffic comes from [MAWI Working Group Traffic Archive](https://m
 ---
 
 If you have any further questions, please contact wuwenhao22s@ict.ac.cn.
+=======
+# hybrid-sdn-ddos
+Hybrid CP-DP DDos Detection in SDN
+>>>>>>> 8513fff44f99f177de477b92a37feb3e835f3deb
